@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="profile-container">
+    <div class="profile-pic-container">
+      <img [src]="profilePic || 'assets/shapes.svg'" alt="Profile Picture" class="profile-pic"/>
+      <ion-button fill="clear" (click)="uploadPicture()">Cambiar Foto</ion-button>
+    </div>
+
+    
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <ion-list>
+        
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="firstName" type="text"></ion-input>
+        </ion-item>
+
+        
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input formControlName="lastName" type="text"></ion-input>
+        </ion-item>
+
+        
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input formControlName="email" type="email"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      
+      <ion-button expand="full" type="submit" [disabled]="profileForm.invalid">Guardar Cambios</ion-button>
+    </form>
+  </div>
+</ion-content> 

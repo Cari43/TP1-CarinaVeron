@@ -1,0 +1,7 @@
+{
+  "name": "TP1-CarinaVeron",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

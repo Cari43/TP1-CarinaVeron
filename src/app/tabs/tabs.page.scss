@@ -1,0 +1,18 @@
+ion-tab-bar {
+    background-color: #f8f9fa;  /* Color de fondo para la barra de pestañas */
+    border-top: 1px solid #ddd; /* Línea superior de la barra */
+  
+    ion-tab-button {
+      --color-selected: #3880ff;  /* Color del ícono y texto cuando está seleccionado */
+      --color: #8e8e93;           /* Color del ícono y texto cuando no está seleccionado */
+  
+      ion-icon {
+        font-size: 24px;           /* Tamaño del ícono */
+      }
+  
+      ion-label {
+        font-size: 12px;           /* Tamaño de la etiqueta de texto */
+      }
+    }
+  }
+  
