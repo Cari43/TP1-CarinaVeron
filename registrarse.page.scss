@@ -1,0 +1,29 @@
+.register-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f4f4f4;
+
+  .register-wrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  ion-card {
+    padding: 20px;
+    ion-card-title {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    ion-button {
+      margin-top: 20px;
+    }
+
+    ion-text {
+      margin-top: 5px;
+      font-size: 0.9rem;
+    }
+  }
+}
